@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTimer } from 'react-timer-hook'
+import './styles.css'
 
 // Constants
 const SECONDS_TO_JUMP = 1200 
@@ -34,21 +35,22 @@ function MyTimer ({ expiryTimestamp }) {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <h1>react-timer-hook </h1>
+      <h1>♡ My Timer ♡ </h1>
       <p>Timer Demo</p>
       <div style={{fontSize: '100px'}}>
         <span>{minutes}</span>:<span>{seconds.toString().padStart(2,'0')}</span>
       </div>
       
-      {!isRunning && !isPaused && <button onClick={handleStart}>Start</button>}
-      {isRunning && <button onClick={handlePause}>Pause</button>}
-      {isPaused && <button onClick={handleResume}>Resume</button>}
+      {!isRunning && !isPaused && <button className="button" onClick={handleStart}>Start</button>}
+      {isRunning && <button className="button" onClick={handlePause}>Pause</button>}
+      {isPaused && <button className="button" onClick={handleResume}>Resume</button>}
 
-      <button onClick={() => {
+      <button className="button" onClick={() => {
         // Restarts timer
         const time = new Date();
         time.setSeconds(time.getSeconds() + SECONDS_TO_JUMP);
         restart(time, false)
+        setIsPaused(false)
       }}>Restart</button>
     </div>
   );
