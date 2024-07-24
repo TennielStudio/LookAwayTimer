@@ -6,9 +6,12 @@ import TimerButtons from "./TimerButtons"
 import TextBubble from "../assets/text-bubble.png"
 import Laptop from "../assets/laptop.webp"
 import Toast from "../assets/toast.webp"
+import Quack from "../assets/quack.mp3"
 import { TWENTY_MINUTES_IN_SEC, TWENTY_SECONDS } from '../TimerConstants'
 
 const TimerExpired = ({ timerDuration, setNextTimeInterval, setHasExpired }) => {
+  new Audio(Quack).play();
+
   if (timerDuration === TWENTY_MINUTES_IN_SEC) {
     setNextTimeInterval(TWENTY_SECONDS)
   }
@@ -66,18 +69,24 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
 
   return (
     <div className="full-page" style={{textAlign: 'center'}}>
-    <div className="title-container">
-      <h1 className="title">♡ DuckyVision 3000 ♡ </h1>
-      <div className="banner-container">
-          <img src={Banner} alt="" />
+      <div className="title-container">
+        <h1 className="title">♡ DuckyVision 3000 ♡ </h1>
+        <div className="banner-container">
+            <img src={Banner} alt="" />
+        </div>
       </div>
-    </div>
+
+      <div className="credits-container">
+          <p className="credits">
+          made with 💖 - <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">tenniel</a>
+          </p>
+      </div>
 
       <div className="timer">
         <div className="time" style={{fontSize: '100px'}}> 
           <span>{minutes}</span>:<span>{seconds.toString().padStart(2,'0')}</span>
-        </div>
-      
+      </div>
+    
         <div className="timer-buttons">
           <TimerButtons
           isRunning={isRunning}
@@ -92,14 +101,19 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
       </div>
 
       <div className="lower-page-container">
+        <div className="instructions-container">
+          <p className="instructions">
+          Every 20 minutes look 20 feet away for 20 seconds.
+          </p>
+        </div>
         <div className="duck-container">
           <img className="real-duck" src={RealDuck} alt="" />
         </div>
         <div className="text-bubble-content-container">
-            <p className="text-bubble-content">
-              Ducks have better vision than humans!
-              Why? We take regular screen breaks.
-              And we use this timer to do it. Quack.</p>
+          <p className="text-bubble-content">
+            Ducks have <a href="https://www.themeateater.com/hunt/waterfowl/the-truth-about-duck-vision" target="_blank" rel="noopener noreferrer">better vision than humans!</a>
+            &nbsp;Why? We take regular screen breaks.
+            And we use this timer to do it. Quack.</p>
           </div>
         <div className="text-bubble-container">
           <img className="text-bubble" src={TextBubble} alt=""/>
@@ -113,8 +127,10 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
         <div className="yummy-taas-link-container">
           <a className="yummy-taas-link" href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer"/>
         </div>
+        <div className="laptop-credit-container">
+          <a className="laptop-credit-link" href="https://www.vecteezy.com/free-vector/pixel" target="_blank" rel="noopener noreferrer">Pixel Vectors by Vecteezy</a>
+        </div>
       </div>
-      <a href="https://www.vecteezy.com/free-vector/pixel">Pixel Vectors by Vecteezy</a>
     </div>
   );
 }

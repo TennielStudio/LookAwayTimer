@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-  color: mediumpurple;
+  color: darkmagenta;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -20,7 +20,7 @@ body {
 
 .banner-container{
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: -10px;
   width: 105%;
   z-index: 1;
@@ -33,6 +33,20 @@ body {
   object-fit: cover;
 }
 
+.credits-container {
+  position: absolute;
+  top: 115px;
+  left: 220px;
+}
+
+.credits {
+  position: relative;
+  font-family: "Comic Neue", cursive;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .timer {
   border: dotted tomato 7px;
   border-radius: 5px;
@@ -42,7 +56,9 @@ body {
 
 .time {
   padding-top: 5px;
-  font-weight: 500;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: mediumpurple;
 }
 
@@ -62,6 +78,32 @@ body {
   position: relative;
 }
 
+.instructions-container {
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  animation: slideTextOnXAxis .9s infinite;
+}
+
+.instructions {
+  position: relative;
+  font-family: "Comic Neue", cursive;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@keyframes slideTextOnXAxis {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-9px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .duck-container {
   position: absolute;
   width: 50vw; /* 50% of the viewport width */
@@ -75,7 +117,7 @@ body {
 }
 
 .text-bubble-content-container {
-  position: absolute;
+  position: relative;
   width: 230px;
   height: 50px;
   top: 73px;
@@ -85,7 +127,6 @@ body {
 }
 
 .text-bubble-content {
-  position: relative;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   font-weight: bold;
@@ -160,6 +201,24 @@ body {
   height: 100%;
   display: block;
   z-index: 4;
+}
+
+.laptop-credit-container {
+  position: absolute;
+  top: 250px;
+  width: 90px;
+  height: 19px;
+  z-index: 3;
+}
+
+.laptop-credit-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 4;
+  font-size: 7px;
+  color: lightcoral;
 }
 
 /* Medium devices (tablets) */
