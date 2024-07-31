@@ -1,3 +1,12 @@
+:root {
+  --fs-xl: clamp(1.5rem, 3.8vw + 1.05rem, 8rem);
+  --fs-m: clamp(1rem, 2.5vw + 0.75rem, 5rem);
+  --fs-s: clamp(0.80rem, 1.8vw + 0.7rem, 2.5rem);
+  --fs-xs: clamp(0.75rem, 1.2vw + 0.65rem, 1.5rem);
+
+  --x-anim: clamp()
+}
+
 body {
   background-image: url("assets/pink-red-grid.png");
   background-repeat: repeat;
@@ -7,22 +16,31 @@ body {
 .full-page {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Sets div to 100% of the viewport height */
+}
+
+.upper-page-container {
+  position: relative;
+  width: 100%;
+}
+
+.title-container {
+  position: relative;
+  top: 16px;
+  right: 9px;
+  z-index: 2;
 }
 
 .title {
   color: darkmagenta;
-  position: relative;
-  z-index: 2;
   text-align: center;
-  margin-top: 35px;
+  font-size: var(--fs-xl);
 }
 
 .banner-container{
   position: absolute;
-  top: 0px;
-  left: -10px;
-  width: 105%;
+  top: -9px;
+  left: -20px;
+  width: 107%;
   z-index: 1;
 }
 
@@ -34,23 +52,38 @@ body {
 }
 
 .credits-container {
-  position: absolute;
-  top: 115px;
-  left: 220px;
+  position: relative;
+  padding-top: 5px;
+  top: 3vh;
+  left: 109px;
 }
 
 .credits {
-  position: relative;
   font-family: "Comic Neue", cursive;
-  font-size: 15px;
+  font-size: var(--fs-xs);
   font-weight: 400;
   font-style: normal;
 }
 
-.timer {
+.description-container {
+  position: absolute;
+  width: 89%;
+  bottom: 185px;
+  left: 17px;
+  border-color: green;
+  white-space: nowrap;
+}
+
+.description {
+  font-family: "Comic Neue", cursive;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timer-container {
   border: dotted tomato 7px;
   border-radius: 5px;
-  margin-top: 15vh;
+  margin-top: 11vh;
   background-color: white;
 }
 
@@ -60,6 +93,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: mediumpurple;
+  font-size: 100px;
 }
 
 .timer-buttons {
@@ -80,15 +114,18 @@ body {
 
 .instructions-container {
   position: absolute;
-  top: -8px;
-  left: 15px;
-  animation: slideTextOnXAxis .9s infinite;
+  width: 89%;
+  margin: auto;
+  left: 4px;
+  border-color: green;
+  white-space: nowrap;
+  animation: slideTextOnXAxis 1.5s infinite;
 }
 
 .instructions {
   position: relative;
   font-family: "Comic Neue", cursive;
-  font-size: 15px;
+  font-size: var(--fs-xs);
   font-weight: bold;
 }
 
@@ -97,7 +134,7 @@ body {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-9px);
+    transform: translateX(calc(100% - 93%));
   }
   100% {
     transform: translateX(0);
@@ -117,7 +154,7 @@ body {
 }
 
 .text-bubble-content-container {
-  position: relative;
+  position: relative; /*parent position is relative and child is absolute, will squish itself in there*/
   width: 230px;
   height: 50px;
   top: 73px;
@@ -221,18 +258,85 @@ body {
   color: lightcoral;
 }
 
+.duck-story-container {
+  position: absolute;
+  z-index: 3;
+  width: 98%;
+  height: 100%;
+  top: 330px;
+  border: solid black 3px;
+  background-color: seagreen;
+  cursor: pointer;
+}
+
+.duck-story {
+  position: relative;
+  top: -7px;
+  font-size: var(--fs-m);
+  background-color: palegreen;
+}
+
+.look-away-timer-story-container {
+  position: absolute;
+  z-index: 3;
+  width: 98%;
+  top: 410px;
+  border: dotted black 3px;
+  background-color: powderblue;
+}
+
+.look-away-timer-story {
+  font-size: var(--fs-s);
+}
+
 /* Medium devices (tablets) */
-@media (max-width: 768px) {
-  
+@media (min-width: 768px) {
+  .full-page {
+    margin: 40px;
+  }
+
+  .banner-container{
+    width: 104%;
+    left: -15px;
+    top: -30px;
+  }
+
+  .credits-container {
+    top: 5vh;
+    left: 240px;
+  }
+
+  .timer-container {
+    padding: 2.7vh;
+  }
+
+  .time {
+    font-size: 150px;
+  }
+
+  .duck-container {
+    width: 37vw;
+  }
+
+  .laptop-container {
+    border: solid 2px;
+  }
+
+  .duck-story-container {
+    top: 450px;
+  }
+
+  .look-away-timer-story-container {
+    top: 530px;
+  }
 }
 
 /* Large devices (desktops) */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   
 }
 
 /* Extra large devices (large desktops) */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   
 }
-
