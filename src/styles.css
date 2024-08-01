@@ -314,12 +314,58 @@ body {
     font-size: 150px;
   }
 
+  .timer-buttons button {
+    font-size: 24px;
+  }
+
+  .text-bubble-content-container {
+    width: 270px;
+    height: 50px;
+    top: 95px;
+    left: 80px;
+  }
+  
+  .text-bubble-content {
+    font-size: 15.5px;
+  }
+  
+  .text-bubble-container {
+    left: 70px;
+    top: 0px;
+  }
+  
+  .text-bubble {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
   .duck-container {
     width: 37vw;
+    left: 300px;
+    top: 170px;
   }
 
   .laptop-container {
-    border: solid 2px;
+    top: 230px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .laptop {
+    width: 180px;
+    height: 180px;
+  }
+
+  .toast-container {
+    top: 285px;
+    right: 43px;
+  }
+  
+  .toast {
+    width: 33px;
+    height: 33px;
+    opacity: 0.75;
   }
 
   .duck-story-container {
