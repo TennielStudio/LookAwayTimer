@@ -1,4 +1,10 @@
 :root {
+  --fs-ipad-mini-xl: clamp(1.5rem, 4.5vw + 1.15rem,8rem);
+
+  --fs-small-desktop-xl: clamp(1.5rem, 1.7vw + 1.15rem,8rem);
+  --fs-small-desktop-s: clamp(0.80rem, 1.0vw + 0.7rem, 2.5rem);
+  --fs-small-desktop-xs: clamp(0.75rem, 0.9vw + 0.65rem, 1.5rem);
+
   --fs-xl: clamp(1.5rem, 3.8vw + 1.05rem, 8rem);
   --fs-m: clamp(1rem, 2.5vw + 0.75rem, 5rem);
   --fs-s: clamp(0.80rem, 1.8vw + 0.7rem, 2.5rem);
@@ -295,6 +301,10 @@ body {
     margin: 40px;
   }
 
+  .title {
+    font-size: var(--fs-ipad-mini-xl);
+  }
+
   .banner-container{
     width: 104%;
     left: -15px;
@@ -378,8 +388,132 @@ body {
 }
 
 /* Large devices (desktops) */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
+  .full-page {
+    margin-right: 280px;
+    margin-left: 280px;
+    margin-top: 100px;
+  }
+
+  .title-container {
+    top: -10px;
+    right: 0px;
+  }
+
+  .title {
+    font-size: var(--fs-small-desktop-xl);
+  }
+
+  .banner-container{
+    left: -30px;
+    top: -65px;
+  }
+
+  .credits-container {
+    top: 0vh;
+    left: 130px;
+  }
   
+  .credits {
+    font-family: "Comic Neue", cursive;
+    font-size: var(--fs-small-desktop-xs);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .timer-container {
+    margin-top: 16%;
+    width: 80%;
+    height: 80%;
+  }
+
+  .time {
+    font-size: 85px;
+  }
+
+  .timer-buttons button {
+    font-size: 15px;
+  }
+
+  .instructions {
+    font-size: var(--fs-small-desktop-s);
+  }
+
+  .text-bubble-content-container {
+    width: 250px;
+    height: 50px;
+    top: 93px;
+    left: 28px;
+  }
+  
+  .text-bubble-content {
+    font-size: 13.2px;
+  }
+
+  .text-bubble-container {
+    left: 20px;
+    top: 10px;
+  }
+  
+  .text-bubble {
+    width: 260px;
+    height: 260px;
+  }
+
+  .duck-container {
+    width: 20vw;
+    left: 220px;
+    top: 150px;
+  }
+
+  .laptop-container {
+    top: 190px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .laptop {
+    width: 130px;
+    height: 130px;
+  }
+
+  .toast-container {
+    top: 230px;
+    right: 70px;
+  }
+  
+  .toast {
+    width: 26px;
+    height: 26px;
+    opacity: 0.75;
+  }
+
+  .duck-story-container {
+    top: 340px;
+  }
+
+  .look-away-timer-story-container {
+    top: 490px;
+  }
+
+  .duck-story-container {
+    width: 94%;
+  }
+
+  .duck-story {
+    font-size: var(--fs-small-desktop-s);
+  }
+  
+  .look-away-timer-story-container {
+    width: 94%;
+    top: 430px;
+    border: dotted black 5px;
+  }
+  
+  .look-away-timer-story {
+    font-size: var(--fs-small-desktop-s);
+  }
 }
 
 /* Extra large devices (large desktops) */

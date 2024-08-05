@@ -79,7 +79,7 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
 
         <div className="credits-container">
             <p className="credits">
-            made with 💖 - <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">tenniel</a>
+            coded with 💖 - <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">tenniel</a>
             </p>
         </div>
 
