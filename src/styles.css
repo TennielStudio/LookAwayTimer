@@ -1,9 +1,13 @@
 :root {
   --fs-ipad-mini-xl: clamp(1.5rem, 4.5vw + 1.15rem,8rem);
 
-  --fs-small-desktop-xl: clamp(1.5rem, 1.7vw + 1.15rem,8rem);
-  --fs-small-desktop-s: clamp(0.80rem, 1.0vw + 0.7rem, 2.5rem);
+  --fs-small-desktop-xl: clamp(1.5rem, 1.8vw + 1.15rem,8rem);
+  --fs-small-desktop-s: clamp(0.80rem, 1.0vw + 0.6rem, 2.5rem);
   --fs-small-desktop-xs: clamp(0.75rem, 0.9vw + 0.65rem, 1.5rem);
+
+  --fs-large-desktop-xl: clamp(2rem, 2.2vw + 1.5rem, 10rem);
+  --fs-large-desktop-s: clamp(1rem, 1.0vw + 0.7rem, 3rem);
+  --fs-large-desktop-xs: clamp(0.85rem, 1vw + 0.75rem, 2rem);
 
   --fs-xl: clamp(1.5rem, 3.8vw + 1.05rem, 8rem);
   --fs-m: clamp(1rem, 2.5vw + 0.75rem, 5rem);
@@ -114,7 +118,7 @@ body {
   font-weight: bold;
 }
 
-.lower-page-container {
+.duck-text-container {
   position: relative;
 }
 
@@ -226,24 +230,7 @@ body {
   height: 19px;
   object-fit: cover;
   opacity: 0.75;
-}
-
-.yummy-taas-link-container {
-  position: absolute;
-  top: 205px;
-  right: 15px;
-  width: 19px;
-  height: 19px;
   cursor: pointer;
-  z-index: 3;
-}
-
-.yummy-taas-link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 4;
 }
 
 .laptop-credit-container {
@@ -264,11 +251,16 @@ body {
   color: lightcoral;
 }
 
+.notes-container {
+  position: relative;
+  top: -80px;
+}
+
 .duck-story-container {
   position: absolute;
   z-index: 3;
   width: 98%;
-  height: 100%;
+  height: 70px;
   top: 330px;
   border: solid black 3px;
   background-color: seagreen;
@@ -295,11 +287,13 @@ body {
   font-size: var(--fs-s);
 }
 
-/* Medium devices (tablets) */
+/* Medium devices (tablets) vertical */
 @media (min-width: 768px) {
   .full-page {
     margin: 40px;
   }
+
+  /*--------UPPER PAGE CONTAINER--------*/
 
   .title {
     font-size: var(--fs-ipad-mini-xl);
@@ -387,17 +381,22 @@ body {
   }
 }
 
-/* Large devices (desktops) */
+/* Large devices (laptops) ipad mini horizontal */
 @media (min-width: 1024px) {
   .full-page {
-    margin-right: 280px;
-    margin-left: 280px;
-    margin-top: 100px;
+    display: grid;
+    gap: -2.0rem;
+    grid-template-columns: 50% 50%;
   }
 
+  .upper-page-container {
+    width: 90%;
+  }
+
+  /*--------------upper-page--------------*/
   .title-container {
     top: -10px;
-    right: 0px;
+    right: 01px;
   }
 
   .title {
@@ -405,12 +404,13 @@ body {
   }
 
   .banner-container{
-    left: -30px;
-    top: -65px;
+    left: -20px;
+    top: -40px;
+    width: 450px;
   }
 
   .credits-container {
-    top: 0vh;
+    top: -20px;
     left: 130px;
   }
   
@@ -422,9 +422,10 @@ body {
   }
 
   .timer-container {
-    margin-top: 16%;
+    margin-top: 7%;
+    padding-bottom: 7%;
     width: 80%;
-    height: 80%;
+    height: 30%;
   }
 
   .time {
@@ -435,24 +436,26 @@ body {
     font-size: 15px;
   }
 
+  .instructions-container {
+    left: -14px;
+  }
+
   .instructions {
     font-size: var(--fs-small-desktop-s);
   }
 
-  .text-bubble-content-container {
-    width: 250px;
-    height: 50px;
-    top: 93px;
-    left: 28px;
-  }
-  
-  .text-bubble-content {
-    font-size: 13.2px;
+  /*--------------duck-text--------------*/
+  .notes-container {
+    position: static;
   }
 
+  .duck-text-container{
+    grid-column: 1;
+  }  
+  
   .text-bubble-container {
-    left: 20px;
-    top: 10px;
+    left: 0px;
+    top: -42px;
   }
   
   .text-bubble {
@@ -460,15 +463,26 @@ body {
     height: 260px;
   }
 
+  .text-bubble-content-container {
+    width: 250px;
+    height: 50px;
+    top: 40px;
+    left: 8px;
+  }
+  
+  .text-bubble-content {
+    font-size: 13.2px;
+  }
+
   .duck-container {
     width: 20vw;
-    left: 220px;
-    top: 150px;
+    left: 160px;
+    top: 100px;
   }
 
   .laptop-container {
-    top: 190px;
-    right: 0px;
+    top: 160px;
+    right: 10px;
     width: 200px;
     height: 200px;
   }
@@ -479,8 +493,8 @@ body {
   }
 
   .toast-container {
-    top: 230px;
-    right: 70px;
+    top: 200px;
+    right: 80px;
   }
   
   .toast {
@@ -489,16 +503,11 @@ body {
     opacity: 0.75;
   }
 
+  /*--------------duck-story--------------*/
   .duck-story-container {
-    top: 340px;
-  }
-
-  .look-away-timer-story-container {
-    top: 490px;
-  }
-
-  .duck-story-container {
-    width: 94%;
+    top: 30px;
+    width: 25%;  
+    height: 10%;
   }
 
   .duck-story {
@@ -506,8 +515,8 @@ body {
   }
   
   .look-away-timer-story-container {
-    width: 94%;
-    top: 430px;
+    width: 25%;  
+    top: 130px;
     border: dotted black 5px;
   }
   
@@ -516,7 +525,149 @@ body {
   }
 }
 
-/* Extra large devices (large desktops) */
-@media (min-width: 1200px) {
+/* laptop devices 1280 x 800 */
+@media (min-width: 1280px) {
+  .banner-container{
+    left: 0px;
+    top: -40px;
+    width: 500px;
+  }
+
+  .text-bubble-container {
+    left: 0px;
+    top: -30px;
+  }
+
+  .text-bubble-content-container {
+    width: 250px;
+    height: 50px;
+    top: 52px;
+    left: 8px;
+  }
+
+  .laptop-container {
+    top: 160px;
+    right: 60px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .toast-container {
+    top: 200px;
+    right: 130px;
+  }
+}
+
+/* big desktop 1920 x 1080 */
+@media (min-width: 1920px) {
+  .banner-container{
+    left: 50px;
+    top: -40px;
+    width: 650px;
+  }
+
+  .credits-container {
+    top: 0px;
+    left: 130px;
+  }
   
+  .credits {
+    font-family: "Comic Neue", cursive;
+    font-size: var(--fs-large-desktop-xs);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .timer-container {
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 69%;
+    height: 30%;
+  }
+
+  .time {
+    font-size: 130px;
+    padding-top: 0px;
+  }
+
+  .timer-buttons button {
+    font-size: 25px;
+  }
+
+  .instructions {
+    font-size: var(--fs-large-desktop-s);
+  }
+
+  /*--------------duck-story--------------*/
+  .text-bubble-container {
+    left: 0px;
+    top: -42px;
+  }
+  
+  .text-bubble {
+    width: 320px;
+    height: 320px;
+  }
+
+  .text-bubble-content-container {
+    width: 315px;
+    height: 400px;
+    top: 57px;
+    left: 5px;
+  }
+  
+  .text-bubble-content {
+    font-size: 17px;
+  }
+
+  .duck-container {
+    width: 17vw;
+    left: 190px;
+    top: 110px;
+  }
+
+  .laptop-container {
+    top: 160px;
+    right: 280px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .laptop {
+    width: 200px;
+    height: 200px;
+  }
+
+  .toast-container {
+    top: 220px;
+    right: 335px;
+  }
+  
+  .toast {
+    width: 42px;
+    height: 42px;
+    opacity: 0.75;
+  }
+
+  /*--------------duck-story--------------*/
+  .duck-story-container {
+    top: 30px;
+    width: 25%;  
+    height: 10%;
+  }
+
+  .duck-story {
+    font-size: var(--fs-small-desktop-s);
+  }
+  
+  .look-away-timer-story-container {
+    width: 25%;  
+    top: 170px;
+    border: dotted black 5px;
+  }
+  
+  .look-away-timer-story {
+    font-size: var(--fs-small-desktop-s);
+  }
+
 }

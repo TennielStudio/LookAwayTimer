@@ -83,12 +83,6 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
             </p>
         </div>
 
-        {/* <div className="description-container">
-          <p className="description">
-          Hi, this timer is built to save your eyes from screen rot :)
-          </p>
-        </div> */}
-
         <div className="timer-container">
           <div className="time"> 
             <span>{minutes}</span>:<span>{seconds.toString().padStart(2,'0')}</span>
@@ -106,15 +100,14 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
             setIsPaused={setIsPaused}/> 
           </div>
         </div>
-      </div>
-      
-
-      <div className="lower-page-container">
         <div className="instructions-container">
           <p className="instructions">
           Every 20 minutes look 20 feet away for 20 seconds.
           </p>
         </div>
+      </div>
+      
+      <div className="duck-text-container">
         <div className="duck-container">
           <img className="real-duck" src={RealDuck} alt="" />
         </div>
@@ -131,40 +124,42 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
           <img className="laptop" src={Laptop} alt=""/>
         </div>
         <div className="toast-container">
-          <img className="toast" src={Toast} alt=""/>
-        </div>
-        <div className="yummy-taas-link-container">
-          <a className="yummy-taas-link" href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer"/>
+          <a className="yummy-taas-link" href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer">
+            <img className="toast" src={Toast} alt=""/>
+          </a>
         </div>
         <div className="laptop-credit-container">
           <a className="laptop-credit-link" href="https://www.vecteezy.com/free-vector/pixel" target="_blank" rel="noopener noreferrer">Pixel Vectors by Vecteezy</a>
         </div>
-        <div className="duck-story-container">
-          <p className="duck-story">
-          Click here to watch mr.duckington's story :3
-          </p>
-        </div>
-        <div className="look-away-timer-story-container">
-          <p className="look-away-timer-story">
-            <b>Tenniel's Sticky Note:</b><br />
-            I'm not telling you to look away from the screen just for fun!!<br />
-            As an office worker myself, I know how screen fatigue can sneak up on you.<br />
-            That's why I created this reminder!<br />
-            <br />
-            It's sooo important to take breaks so your eyes don't shrivel up into dry little raisins by the end of day.<br />
-            <br />
-            Other good reasons:<br />
-            1. It reduces eye strain + fatigue<br />
-            2. It prevent long-term vision problems (like myopia)<br />
-            3. It boosts your mood by 3000% when you look away from the screen and at something else. Like <a href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer">toast</a>.<br />
-            <br />
-            If you found this helpful, share this with another screen enjoyer to save a life, or dm me on <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">X</a> to let me know!!<br />
-            <br />
-            Hope this makes your work day a bit brighter!<br />
-            Xoxo - Tenniel 💖<br />
-          </p>
-        </div>
       </div>
+      
+        <div className="notes-container">
+          <div className="duck-story-container">
+            <p className="duck-story">
+            Click here to watch mr.duckington's story :3
+            </p>
+          </div>
+          <div className="look-away-timer-story-container">
+            <p className="look-away-timer-story">
+              <b>Tenniel's Sticky Note:</b><br />
+              I'm not telling you to look away from the screen just for fun!!<br />
+              As an office worker myself, I know how screen fatigue can sneak up on you.<br />
+              That's why I created this reminder!<br />
+              <br />
+              It's sooo important to take breaks so your eyes don't shrivel up into dry little raisins by the end of day.<br />
+              <br />
+              Other good reasons:<br />
+              1. It reduces eye strain + fatigue<br />
+              2. It prevent long-term vision problems (like myopia)<br />
+              3. It boosts your mood by 3000% when you look away from the screen and at something else. Like <a href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer">toast</a>.<br />
+              <br />
+              If you found this helpful, share this with another screen enjoyer to save a life, or dm me on <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">X</a> to let me know!!<br />
+              <br />
+              Hope this makes your work day a bit brighter!<br />
+              Xoxo - Tenniel 💖<br />
+            </p>
+          </div>
+        </div>
     </div>
   );
 }
