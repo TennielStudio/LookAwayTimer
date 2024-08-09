@@ -558,6 +558,81 @@ body {
   }
 }
 
+/* screen size 1440 x 900 */
+@media (min-width: 1440px) {
+  .banner-container{
+    left: 0px;
+    top: -40px;
+    width: 550px;
+  }
+
+  .timer-container {
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 69%;
+    height: 30%;
+  }
+
+  .time {
+    font-size: 100px;
+    padding-top: 0px;
+  }
+
+  /*--------------duck-story--------------*/
+  .text-bubble-container {
+    left: 0px;
+    top: -38px;
+  }
+  
+  .text-bubble {
+    width: 290px;
+    height: 290px;
+  }
+
+  .text-bubble-content-container {
+    width: 290px;
+    height: 200px;
+    top: 53px;
+    left: 0px;
+  }
+  
+  .text-bubble-content {
+    font-size: 15.5px;
+  }
+
+  .duck-container {
+    width: 19vw;
+    left: 190px;
+    top: 110px;
+  }
+
+  .laptop-container {
+    top: 160px;
+    right: 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .laptop {
+    width: 175px;
+    height: 175px;
+  }
+
+  .toast-container {
+    top: 213px;
+    right: 160px;
+  }
+  
+  .toast {
+    width: 33px;
+    height: 33px;
+  }
+
+  .look-away-timer-story-container {
+    top: 155px;
+  }
+}
+
 /* big desktop 1920 x 1080 */
 @media (min-width: 1920px) {
   .banner-container{
@@ -578,16 +653,8 @@ body {
     font-style: normal;
   }
 
-  .timer-container {
-    margin-top: 5%;
-    margin-left: 7%;
-    width: 69%;
-    height: 30%;
-  }
-
   .time {
     font-size: 130px;
-    padding-top: 0px;
   }
 
   .timer-buttons button {
@@ -622,15 +689,10 @@ body {
 
   .duck-container {
     width: 17vw;
-    left: 190px;
-    top: 110px;
   }
 
   .laptop-container {
-    top: 160px;
     right: 280px;
-    width: 200px;
-    height: 200px;
   }
 
   .laptop {
@@ -646,7 +708,6 @@ body {
   .toast {
     width: 42px;
     height: 42px;
-    opacity: 0.75;
   }
 
   /*--------------duck-story--------------*/
@@ -663,11 +724,14 @@ body {
   .look-away-timer-story-container {
     width: 25%;  
     top: 170px;
-    border: dotted black 5px;
   }
   
   .look-away-timer-story {
     font-size: var(--fs-small-desktop-s);
   }
+}
+
+/* screen size 2560 x 1440 */
+@media (min-width: 2560px) {
 
 }
