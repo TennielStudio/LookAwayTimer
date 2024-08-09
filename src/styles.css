@@ -578,7 +578,7 @@ body {
     padding-top: 0px;
   }
 
-  /*--------------duck-story--------------*/
+  /*--------------duck-laptop--------------*/
   .text-bubble-container {
     left: 0px;
     top: -38px;
@@ -647,10 +647,7 @@ body {
   }
   
   .credits {
-    font-family: "Comic Neue", cursive;
     font-size: var(--fs-large-desktop-xs);
-    font-weight: 400;
-    font-style: normal;
   }
 
   .time {
@@ -665,7 +662,7 @@ body {
     font-size: var(--fs-large-desktop-s);
   }
 
-  /*--------------duck-story--------------*/
+  /*--------------duck-laptop--------------*/
   .text-bubble-container {
     left: 0px;
     top: -42px;
@@ -733,5 +730,70 @@ body {
 
 /* screen size 2560 x 1440 */
 @media (min-width: 2560px) {
+  .banner-container{
+    left: 50px;
+    top: -40px;
+    width: 800px;
+  }
 
+  .time {
+    font-size: 150px;
+  }
+
+  .timer-buttons button {
+    font-size: 27px;
+  }
+
+  /*--------------duck-laptop--------------*/
+  .text-bubble-container {
+    left: 100px;
+    top: -42px;
+  }
+  
+  .text-bubble {
+    width: 360px;
+    height: 360px;
+  }
+
+  .text-bubble-content-container {
+    width: 320px;
+    height: 400px;
+    top: 73px;
+    left: 115px;
+  }
+  
+  .text-bubble-content {
+    font-size: 18px;
+  }
+
+  .duck-container {
+    top: 150px;
+    left: 350px; 
+    width: 15vw;
+  }
+
+  .laptop-container {
+    top: 220px;
+    right: 370px;
+  }
+
+  .laptop {
+    width: 240px;
+    height: 240px;
+  }
+
+  .toast-container {
+    top: 290px;
+    right: 430px;
+  }
+  
+  .toast {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*--------------duck-story--------------*/
+  .duck-story-container {
+    height: 7%;
+  }
 }
