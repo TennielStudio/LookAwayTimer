@@ -774,78 +774,97 @@ body {
 /* screen size 2560 x 1440 */
 @media (min-width: 2560px) {
   .banner-container{
-    left: 50px;
+    left: 120px;
     top: -40px;
-    width: 900px;
+    width: 1200px;
   }
 
   .credits-container {
-    top: 40px;
-    left: 130px;
+    top: 130px;
+    left: 250px;
   }
   
   .credits {
-    font-size: var(--fs-xlarge-desktop-xs);
+    font-size: var(--fs-xlarge-desktop-s);
+  }
+
+  .timer-container {
+    margin-top: 14%;
+    width: 70%;
+    height: 32%;
   }
 
   .time {
-    font-size: 150px;
+    font-size: 230px;
   }
 
   .timer-buttons button {
-    font-size: 27px;
+    font-size: 40px;
   }
 
   /*--------------duck-laptop--------------*/
   .text-bubble-container {
-    left: 100px;
-    top: -42px;
+    left: 140px;
+    top: -60px;
   }
   
   .text-bubble {
-    width: 360px;
-    height: 360px;
+    width: 500px;
+    height: 500px;
   }
 
   .text-bubble-content-container {
-    width: 320px;
+    width: 550px;
     height: 400px;
-    top: 73px;
+    top: 88px;
     left: 115px;
   }
   
   .text-bubble-content {
-    font-size: 18px;
+    font-size: 26.9px;
   }
 
   .duck-container {
-    top: 150px;
-    left: 350px; 
-    width: 15vw;
+    top: 190px;
+    left: 400px; 
+    width: 19vw;
   }
 
   .laptop-container {
     top: 220px;
-    right: 370px;
+    /* left: 900px; */
+    left: 52%;
   }
 
   .laptop {
-    width: 240px;
-    height: 240px;
+    width: 350px;
+    height: 350px;
   }
 
   .toast-container {
-    top: 290px;
-    right: 430px;
+    top: 320px;
+    right: 720px;
   }
   
   .toast {
-    width: 50px;
-    height: 50px;
+    width: 76px;
+    height: 76px;
   }
 
   /*--------------duck-story--------------*/
   .duck-story-container {
-    height: 7%;
+    height: 10%;
+  }
+
+  .duck-story {
+    font-size: var(--fs-xlarge-desktop-s);
+  }
+
+  .look-away-timer-story-container {
+    top: 15%;
+  }
+  
+  .look-away-timer-story {
+    font-size: var(--fs-xlarge-desktop-s);
   }
 }
