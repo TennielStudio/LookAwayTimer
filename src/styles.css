@@ -9,6 +9,10 @@
   --fs-large-desktop-s: clamp(1rem, 1.0vw + 0.7rem, 3rem);
   --fs-large-desktop-xs: clamp(0.85rem, 1vw + 0.75rem, 2rem);
 
+  --fs-xlarge-desktop-xl: clamp(2.5rem, 2.6vw + 1.8rem, 12rem);
+  --fs-xlarge-desktop-s: clamp(1.2rem, 1.2vw + 0.8rem, 3.5rem);
+  --fs-xlarge-desktop-xs: clamp(1rem, 1.1vw + 0.85rem, 2.5rem);
+
   --fs-xl: clamp(1.5rem, 3.8vw + 1.05rem, 8rem);
   --fs-m: clamp(1rem, 2.5vw + 0.75rem, 5rem);
   --fs-s: clamp(0.80rem, 1.8vw + 0.7rem, 2.5rem);
@@ -569,7 +573,7 @@ body {
   .timer-container {
     margin-top: 5%;
     margin-left: 7%;
-    width: 69%;
+    width: 72%;
     height: 30%;
   }
 
@@ -638,20 +642,26 @@ body {
   .banner-container{
     left: 50px;
     top: -40px;
-    width: 650px;
+    width: 750px;
   }
 
   .credits-container {
-    top: 0px;
+    top: 29px;
     left: 130px;
   }
   
   .credits {
-    font-size: var(--fs-large-desktop-xs);
+    font-size: var(--fs-xlarge-desktop-xs);
+  }
+
+  .timer-container {
+    margin-top: 8%;
+    width: 75%;
+    height: 32%;
   }
 
   .time {
-    font-size: 130px;
+    font-size: 150px;
   }
 
   .timer-buttons button {
@@ -659,52 +669,55 @@ body {
   }
 
   .instructions {
-    font-size: var(--fs-large-desktop-s);
+    font-size: var(--fs-xlarge-desktop-s);
   }
 
   /*--------------duck-laptop--------------*/
   .text-bubble-container {
     left: 0px;
-    top: -42px;
+    top: -30px;
   }
   
   .text-bubble {
-    width: 320px;
-    height: 320px;
+    width: 400px;
+    height: 400px;
   }
 
   .text-bubble-content-container {
-    width: 315px;
-    height: 400px;
-    top: 57px;
+    width: 390px;
+    height: 200px;
+    top: 93px;
     left: 5px;
   }
   
   .text-bubble-content {
-    font-size: 17px;
+    font-size: 21.5px;
   }
 
   .duck-container {
-    width: 17vw;
+    left: 190px;
+    top: 190px;
+    width: 19vw;
   }
 
   .laptop-container {
-    right: 280px;
+    top: 200px;
+    right: 220px;
   }
 
   .laptop {
-    width: 200px;
-    height: 200px;
+    width: 245px;
+    height: 254px;
   }
 
   .toast-container {
-    top: 220px;
-    right: 335px;
+    top: 274px;
+    right: 290px;
   }
   
   .toast {
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
   }
 
   /*--------------duck-story--------------*/
@@ -715,7 +728,7 @@ body {
   }
 
   .duck-story {
-    font-size: var(--fs-small-desktop-s);
+    font-size: var(--fs-large-desktop-s);
   }
   
   .look-away-timer-story-container {
@@ -724,7 +737,7 @@ body {
   }
   
   .look-away-timer-story {
-    font-size: var(--fs-small-desktop-s);
+    font-size: var(--fs-large-desktop-s);
   }
 }
 
@@ -733,7 +746,16 @@ body {
   .banner-container{
     left: 50px;
     top: -40px;
-    width: 800px;
+    width: 900px;
+  }
+
+  .credits-container {
+    top: 40px;
+    left: 130px;
+  }
+  
+  .credits {
+    font-size: var(--fs-xlarge-desktop-xs);
   }
 
   .time {
