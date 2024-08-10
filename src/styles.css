@@ -269,6 +269,7 @@ body {
   border: solid black 3px;
   background-color: seagreen;
   cursor: pointer;
+  padding: 11px;
 }
 
 .duck-story {
@@ -285,6 +286,7 @@ body {
   top: 410px;
   border: dotted black 3px;
   background-color: powderblue;
+  padding: 10px;
 }
 
 .look-away-timer-story {
@@ -668,13 +670,13 @@ body {
 /* big desktop 1920 x 1080 */
 @media (min-width: 1920px) {
   .banner-container{
-    left: 50px;
+    left: 100px;
     top: -40px;
-    width: 750px;
+    width: 850px;
   }
 
   .credits-container {
-    top: 29px;
+    top: 50px;
     left: 130px;
   }
   
@@ -684,12 +686,12 @@ body {
 
   .timer-container {
     margin-top: 8%;
-    width: 75%;
+    width: 74%;
     height: 32%;
   }
 
   .time {
-    font-size: 150px;
+    font-size: 160px;
   }
 
   .timer-buttons button {
@@ -702,7 +704,7 @@ body {
 
   /*--------------duck-laptop--------------*/
   .text-bubble-container {
-    left: 0px;
+    left: 100px;
     top: -30px;
   }
   
@@ -715,7 +717,7 @@ body {
     width: 390px;
     height: 200px;
     top: 93px;
-    left: 5px;
+    left: 105px;
   }
   
   .text-bubble-content {
@@ -723,24 +725,24 @@ body {
   }
 
   .duck-container {
-    left: 190px;
+    left: 320px;
     top: 190px;
-    width: 19vw;
+    width: 20vw;
   }
 
   .laptop-container {
     top: 240px;
-    right: 220px;
+    right: 400px;
   }
 
   .laptop {
-    width: 245px;
-    height: 254px;
+    width: 255px;
+    height: 264px;
   }
 
   .toast-container {
-    top: 315px;
-    right: 290px;
+    top: 318px;
+    right: 470px;
   }
   
   .toast {
