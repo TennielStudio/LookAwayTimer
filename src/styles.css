@@ -390,7 +390,7 @@ body {
   .full-page {
     display: grid;
     gap: -2.0rem;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
   }
 
   .upper-page-container {
@@ -531,10 +531,6 @@ body {
 
 /* laptop devices 1280 x 800 */
 @media (min-width: 1280px) {
-  .full-page {
-    grid-template-columns: 70% 30%;
-  }
-
   .banner-container{
     left: 30px;
     top: -40px;
@@ -597,15 +593,15 @@ body {
 /* screen size 1440 x 900 */
 @media (min-width: 1440px) {
   .banner-container{
-    left: 0px;
+    left: 70px;
     top: -40px;
-    width: 550px;
+    width: 630px;
   }
 
   .timer-container {
     margin-top: 5%;
     margin-left: 7%;
-    width: 72%;
+    width: 69%;
     height: 30%;
   }
 
@@ -616,7 +612,7 @@ body {
 
   /*--------------duck-laptop--------------*/
   .text-bubble-container {
-    left: 0px;
+    left: 80px;
     top: -38px;
   }
   
@@ -629,7 +625,7 @@ body {
     width: 290px;
     height: 200px;
     top: 53px;
-    left: 0px;
+    left: 80px;
   }
   
   .text-bubble-content {
@@ -638,13 +634,13 @@ body {
 
   .duck-container {
     width: 19vw;
-    left: 190px;
+    left: 220px;
     top: 110px;
   }
 
   .laptop-container {
     top: 160px;
-    right: 100px;
+    right: 310px;
     width: 200px;
     height: 200px;
   }
@@ -656,7 +652,7 @@ body {
 
   .toast-container {
     top: 213px;
-    right: 160px;
+    right: 370px;
   }
   
   .toast {
