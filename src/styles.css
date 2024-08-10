@@ -385,7 +385,7 @@ body {
   }
 }
 
-/* Large devices (laptops) ipad mini horizontal */
+/* Large devices (laptops) ipad mini horizontal 1024x768*/
 @media (min-width: 1024px) {
   .full-page {
     display: grid;
@@ -531,14 +531,41 @@ body {
 
 /* laptop devices 1280 x 800 */
 @media (min-width: 1280px) {
+  .full-page {
+    grid-template-columns: 70% 30%;
+  }
+
   .banner-container{
-    left: 0px;
+    left: 30px;
     top: -40px;
-    width: 500px;
+    width: 600px;
+  }
+
+  .credits-container {
+    top: 20px;
+  }
+
+  .timer-container {
+    margin-top: 7%;
+    padding-bottom: 6%;
+    width: 75%;
+    height: 30%;
+  }
+
+  .time {
+    font-size: 100px;
+  }
+
+  .timer-buttons button {
+    font-size: 19px;
+  }
+
+  .instructions-container {
+    left: -30px;
   }
 
   .text-bubble-container {
-    left: 0px;
+    left: 34px;
     top: -30px;
   }
 
@@ -546,19 +573,24 @@ body {
     width: 250px;
     height: 50px;
     top: 52px;
-    left: 8px;
+    left: 40px;
+  }
+
+  .duck-container {
+    left: 220px;
+    top: 100px;
   }
 
   .laptop-container {
     top: 160px;
-    right: 60px;
+    right: 250px;
     width: 200px;
     height: 200px;
   }
 
   .toast-container {
     top: 200px;
-    right: 130px;
+    right: 320px;
   }
 }
 
@@ -701,7 +733,7 @@ body {
   }
 
   .laptop-container {
-    top: 200px;
+    top: 240px;
     right: 220px;
   }
 
@@ -711,7 +743,7 @@ body {
   }
 
   .toast-container {
-    top: 274px;
+    top: 315px;
     right: 290px;
   }
   
