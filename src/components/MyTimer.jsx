@@ -7,10 +7,11 @@ import TextBubble from "../assets/text-bubble.png"
 import Laptop from "../assets/laptop.webp"
 import Toast from "../assets/toast.webp"
 import Quack from "../assets/quack.mp3"
+import TimerBeep from "../assets/timer-done.mp3"
 import { TWENTY_MINUTES_IN_SEC, TWENTY_SECONDS } from '../TimerConstants'
 
 const TimerExpired = ({ timerDuration, setNextTimeInterval, setHasExpired }) => {
-  new Audio(Quack).play();
+  new Audio(TimerBeep).play();
 
   if (timerDuration === TWENTY_MINUTES_IN_SEC) {
     setNextTimeInterval(TWENTY_SECONDS)
@@ -65,6 +66,10 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
   const handleStart = () => {
     start()
     setIsPaused(false)
+  }
+
+  const playQuack = () => {
+    new Audio(Quack).play();
   }
 
   return (
@@ -135,9 +140,9 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
       
         <div className="notes-container">
           <div className="duck-story-container">
-            <p className="duck-story">
+            <a className="duck-story" href="https://www.vecteezy.com/free-vector/pixel" onClick={playQuack} target="_blank" rel="noopener noreferrer">
             Click here to watch mr.duckington's story :3
-            </p>
+            </a>
           </div>
           <div className="look-away-timer-story-container">
             <p className="look-away-timer-story">
