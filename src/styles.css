@@ -270,11 +270,16 @@ body {
   background-color: seagreen;
   cursor: pointer;
   padding: 11px;
+  padding-bottom: 2px;
+
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;  /* Centers vertically */
+  text-align: center;  /* Ensures text is centered if it wraps */
 }
 
 .duck-story {
-  position: relative;
-  top: -7px;
+  width: 100%;
   font-size: var(--fs-m);
   background-color: palegreen;
 }
@@ -283,7 +288,7 @@ body {
   position: absolute;
   z-index: 3;
   width: 98%;
-  top: 410px;
+  top: 425px;
   border: dotted black 3px;
   background-color: powderblue;
   padding: 10px;
@@ -383,7 +388,7 @@ body {
   }
 
   .look-away-timer-story-container {
-    top: 530px;
+    top: 550px;
   }
 }
 
@@ -488,7 +493,7 @@ body {
 
   .laptop-container {
     top: 160px;
-    right: 10px;
+    right: 170px;
     width: 200px;
     height: 200px;
   }
@@ -500,7 +505,7 @@ body {
 
   .toast-container {
     top: 200px;
-    right: 80px;
+    right: 240px;
   }
   
   .toast {

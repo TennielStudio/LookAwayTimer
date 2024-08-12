@@ -140,9 +140,9 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
       
         <div className="notes-container">
           <div className="duck-story-container">
-            <a className="duck-story" href="https://www.vecteezy.com/free-vector/pixel" onClick={playQuack} target="_blank" rel="noopener noreferrer">
+            <p className="duck-story">
             Click here to watch mr.duckington's story :3
-            </a>
+            </p>
           </div>
           <div className="look-away-timer-story-container">
             <p className="look-away-timer-story">
