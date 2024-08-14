@@ -146,19 +146,20 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
           </div>
           <div className="look-away-timer-story-container">
             <p className="look-away-timer-story">
-              <b>Tenniel's Sticky Note:</b><br />
-              I'm not telling you to look away from the screen just for fun!!<br />
-              As an office worker myself, I know how screen fatigue can sneak up on you.<br />
-              That's why I created this reminder!<br />
+              <b>Tenniel's Sticky Note:</b><br /><br />
+              I'm not telling you to look away from the screen for no reason!!<br />
+              As a (very) online person myself, I know how screen fatigue can sneak up on you.<br />
+              That's why I created this reminder :)<br />
               <br />
-              It's sooo important to take breaks so your eyes don't shrivel up into dry little raisins by the end of day.<br />
+              It's sooo important to take breaks so your eyes don't shrivel up into dry little raisins by the end of day ~<br />
               <br />
-              Other good reasons:<br />
-              1. It reduces eye strain + fatigue<br />
-              2. It prevent long-term vision problems (like myopia)<br />
-              3. It boosts your mood by 3000% when you look away from the screen and at something else. Like <a href="https://www.yummytaas.com/" target="_blank" rel="noopener noreferrer">toast</a>.<br />
-              <br />
-              If you found this helpful, share this with another screen enjoyer to save a life, or dm me on <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">X</a> to let me know!!<br />
+              Here are some eye-saving alternatives from my <a href="https://twitter.com/tennielstudio/status/1806350277458411924" target="_blank" rel="noopener noreferrer">x community</a>:<br />
+              (These are affiliate links btw)<br /><br />
+              1. <a href="https://amzn.to/4dmE8bz" target="_blank" rel="noopener noreferrer">Steamy eye masks</a><br />
+              2. <a href="https://amzn.to/4dqNrr1" target="_blank" rel="noopener noreferrer">Eye pillows</a><br />
+              3. <a href="https://amzn.to/4fH2bDK" target="_blank" rel="noopener noreferrer">Omega 3s (not medical advice lol)</a><br /><br />
+              If you found this helpful, share this with another screen enjoyer to save a life, dm me on <a href="https://twitter.com/tennielstudio" target="_blank" rel="noopener noreferrer">X</a> to let me know, or you can buy me a
+              little treat 🥹!!<br />
               <br />
               Hope this makes your work day a bit brighter!<br />
               Xoxo - Tenniel 💖<br />
