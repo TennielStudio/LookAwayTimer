@@ -76,7 +76,7 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
     <div className="full-page" style={{textAlign: 'center'}}>
       <div className="upper-page-container">
         <div className="title-container">
-          <h1 className="title">♡ DuckyVision 3000 ♡ </h1>
+          <h1 className="title">♡ proDUCKtive timer ♡ </h1>
         </div>
         <div className="banner-container">
           <img src={Banner} alt="" />
@@ -140,7 +140,7 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
       
         <div className="notes-container">
           <div className="duck-story-container">
-            <p className="duck-story">
+            <p className="duck-story" onClick={playQuack}>
             Click here to watch mr.duckington's story :3
             </p>
           </div>

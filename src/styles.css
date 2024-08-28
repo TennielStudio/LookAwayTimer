@@ -48,6 +48,7 @@ body {
   color: darkmagenta;
   text-align: center;
   font-size: var(--fs-xl);
+  font-family: "Comic Neue", cursive;
 }
 
 .banner-container{
