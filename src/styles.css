@@ -540,9 +540,14 @@ body {
 /* laptop devices 1280 x 800 */
 @media (min-width: 1280px) {
   .banner-container{
-    left: 30px;
+    left: 10px;
     top: -40px;
-    width: 600px;
+    width: 620px;
+  }
+
+  .title-container {
+    top: 10px;
+    right: 50px;
   }
 
   .credits-container {
