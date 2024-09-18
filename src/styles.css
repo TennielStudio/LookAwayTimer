@@ -407,8 +407,8 @@ body {
 
   /*--------------upper-page--------------*/
   .title-container {
-    top: -10px;
-    right: 01px;
+    top: 0px;
+    right: 19px;
   }
 
   .title {
@@ -416,13 +416,13 @@ body {
   }
 
   .banner-container{
-    left: -20px;
+    left: 0px;
     top: -40px;
-    width: 450px;
+    width: 540px;
   }
 
   .credits-container {
-    top: -20px;
+    top: 10px;
     left: 130px;
   }
   
