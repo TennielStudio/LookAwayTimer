@@ -606,9 +606,14 @@ body {
 /* screen size 1440 x 900 */
 @media (min-width: 1440px) {
   .banner-container{
-    left: 70px;
+    left: 65px;
     top: -40px;
-    width: 630px;
+    width: 650px;
+  }
+
+  .title-container {
+    top: 10px;
+    right: 30px;
   }
 
   .timer-container {
