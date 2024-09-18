@@ -147,11 +147,13 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
           <div className="look-away-timer-story-container">
             <p className="look-away-timer-story">
               <b>Tenniel's Sticky Note:</b><br /><br />
-              I'm not telling you to look away from the screen for no reason!!<br />
-              As an online person myself, I know how screen fatigue can sneak up on you.<br />
-              That's why I created this reminder :)<br />
+              Why do your eyes dry up like little raisins by the end of the day??<br />
+              Because you never break eye contact with the screen 😩<br />
               <br />
-              It's sooo important to take breaks so your eyes don't shrivel up into dry little raisins by the end of day ~<br />
+              This works in romantic relationships but you're not dating your computer, right??<br />
+              That's why I built this reminder :)<br />
+              <br />
+              When the 20-min timer ends, you'll hear a beep. This starts a 20-sec break. After the break ends, you can resume work!<br />
               <br />
               Here are some eye-saving alternatives from my <a href="https://twitter.com/tennielstudio/status/1806350277458411924" target="_blank" rel="noopener noreferrer">x community</a>:<br />
               (These are affiliate links btw)<br /><br />
