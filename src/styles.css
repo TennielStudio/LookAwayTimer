@@ -13,7 +13,7 @@
   --fs-xlarge-desktop-s: clamp(1.2rem, 1.2vw + 0.8rem, 3.5rem);
   --fs-xlarge-desktop-xs: clamp(1rem, 1.1vw + 0.85rem, 2.5rem);
 
-  --fs-xl: clamp(1.5rem, 3.8vw + 1.05rem, 8rem);
+  --fs-xl: clamp(1.5rem, 3.8vw + 0.7rem, 8rem);
   --fs-m: clamp(1rem, 2.5vw + 0.75rem, 5rem);
   --fs-s: clamp(0.80rem, 1.8vw + 0.7rem, 2.5rem);
   --fs-xs: clamp(0.75rem, 1.2vw + 0.65rem, 1.5rem);
@@ -39,8 +39,8 @@ body {
 
 .title-container {
   position: relative;
-  top: 16px;
-  right: 9px;
+  top: 22px;
+  right: 7px;
   z-index: 2;
 }
 
