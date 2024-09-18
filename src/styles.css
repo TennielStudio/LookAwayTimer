@@ -5,7 +5,7 @@
   --fs-small-desktop-s: clamp(0.80rem, 1.0vw + 0.6rem, 2.5rem);
   --fs-small-desktop-xs: clamp(0.75rem, 0.9vw + 0.65rem, 1.5rem);
 
-  --fs-large-desktop-xl: clamp(2rem, 2.2vw + 1.5rem, 10rem);
+  --fs-large-desktop-xl: clamp(2rem, 1.8vw + 1.5rem, 10rem);
   --fs-large-desktop-s: clamp(1rem, 1.0vw + 0.7rem, 3rem);
   --fs-large-desktop-xs: clamp(0.85rem, 1vw + 0.75rem, 2rem);
 
@@ -688,7 +688,16 @@ body {
   .banner-container{
     left: 100px;
     top: -40px;
-    width: 850px;
+    width: 859px;
+  }
+
+  .title {
+    font-size: var(--fs-large-desktop-xl);
+  }
+
+  .title-container {
+    top: 20px;
+    right: 43px;
   }
 
   .credits-container {
