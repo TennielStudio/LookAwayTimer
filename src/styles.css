@@ -10,6 +10,7 @@
   --fs-large-desktop-xs: clamp(0.85rem, 1vw + 0.75rem, 2rem);
 
   --fs-xlarge-desktop-xl: clamp(2.5rem, 2.0vw + 1.8rem, 12rem);
+  --fs-xlarge-desktop-l: clamp(1.8rem, 1.6vw + 1.3rem, 7rem);
   --fs-xlarge-desktop-s: clamp(1.2rem, 1.2vw + 0.8rem, 3.5rem);
   --fs-xlarge-desktop-xs: clamp(1rem, 1.1vw + 0.85rem, 2.5rem);
 
@@ -537,6 +538,17 @@ body {
   }
 }
 
+@media (min-width: 1217px) {
+  .banner-container{
+    left: 0px;
+    top: -40px;
+    width: 600px;
+  }
+  .title-container {
+    right: 50px;
+  }
+}
+
 /* laptop devices 1280 x 800 */
 @media (min-width: 1280px) {
   .banner-container{
@@ -796,6 +808,21 @@ body {
   }
 }
 
+@media (min-width: 2483px) {
+  .banner-container{
+    left: 210px;
+    width: 990px;
+  }
+
+  .title {
+    font-size: var(--fs-xlarge-desktop-l);
+  }
+
+  .credits-container {
+    top: 70px;
+  }
+}
+
 /* screen size 2560 x 1440 */
 @media (min-width: 2560px) {
   .banner-container{
@@ -902,3 +929,4 @@ body {
     font-size: var(--fs-xlarge-desktop-s);
   }
 }
+
