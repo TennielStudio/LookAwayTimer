@@ -151,12 +151,12 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
               Because you never break eye contact with the screen 😩<br />
               <br />
               This works in romantic relationships but you're not dating your computer, right??<br />
-              That's why I built this reminder :)<br />
+              That's why I built this reminder!<br />
               <br />
               When the 20-min timer ends, you'll hear a beep. This starts a 20-sec break. After the break ends, you can resume work!<br />
               <br />
               Here are some eye-saving alternatives from my <a href="https://twitter.com/tennielstudio/status/1806350277458411924" target="_blank" rel="noopener noreferrer">x community</a>:<br />
-              (These are affiliate links btw)<br /><br />
+              <br />
               1. <a href="https://amzn.to/4dmE8bz" target="_blank" rel="noopener noreferrer">Steamy eye masks</a><br />
               2. <a href="https://amzn.to/4dqNrr1" target="_blank" rel="noopener noreferrer">Eye pillows</a><br />
               3. <a href="https://amzn.to/4fH2bDK" target="_blank" rel="noopener noreferrer">Omega 3s (not medical advice lol)</a><br /><br />
