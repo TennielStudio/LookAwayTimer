@@ -139,11 +139,16 @@ const MyTimer = ({expiryTimestamp, timerDuration}) => {
       </div>
       
         <div className="notes-container">
-          <div className="duck-story-container">
-            <p className="duck-story" onClick={playQuack}>
-            Click here to watch mr.duckington's story :3
-            </p>
-          </div>
+        <a href="https://www.tiktok.com/@tenniellynn/video/7425832873531378990?is_from_webapp=1&sender_device=pc&web_id=7352356623828239915"
+          target="_blank"
+          rel="noopener noreferrer">
+            <div className="duck-story-container">
+                <p className="duck-story" onClick={playQuack}>
+                Click here to watch mr.duckington's story :3
+                </p>
+              </div>
+        </a>
+          
           <div className="look-away-timer-story-container">
             <p className="look-away-timer-story">
               <b>Tenniel's Sticky Note:</b><br /><br />
